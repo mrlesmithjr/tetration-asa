@@ -1,0 +1,245 @@
+ACL Name,Line,Line Text,In Use,Too General?,Source Clusters,Destination Clusters
+ACL_IN,0,access-list ACL_IN extended permit TCP object Sharepoint_Search object Tetration_Cluster_(172.26.46.0/24) eq https,True,False,Sharepoint Search,Tetration Cluster (172.26.46.0/24)
+ACL_IN,1,access-list ACL_IN extended permit TCP object Sharepoint_Search object Tetration_Cluster_(172.26.46.0/24) eq 5640,True,False,Sharepoint Search,Tetration Cluster (172.26.46.0/24)
+ACL_IN,2,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object Reporting_Service eq 4651,True,False,Tetration Cluster (172.26.46.0/24),Reporting Service
+ACL_IN,3,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object Reporting_Service eq 44371,True,False,Tetration Cluster (172.26.46.0/24),Reporting Service
+ACL_IN,4,access-list ACL_IN extended permit ICMP object VDI_Jump_Server object Sharepoint_Search,True,False,VDI Jump Server,Sharepoint Search
+ACL_IN,5,access-list ACL_IN extended permit ICMP any object Domain_Controllers,True,False,External,Domain Controllers
+ACL_IN,6,access-list ACL_IN extended permit TCP any object Domain_Controllers eq 88,True,False,External,Domain Controllers
+ACL_IN,7,access-list ACL_IN extended permit TCP any object Domain_Controllers eq 135,True,False,External,Domain Controllers
+ACL_IN,8,access-list ACL_IN extended permit TCP any object Domain_Controllers eq netbios-ssn,True,False,External,Domain Controllers
+ACL_IN,9,access-list ACL_IN extended permit TCP any object Domain_Controllers eq ldap,True,False,External,Domain Controllers
+ACL_IN,10,access-list ACL_IN extended permit TCP any object Domain_Controllers eq 445,True,False,External,Domain Controllers
+ACL_IN,11,access-list ACL_IN extended permit TCP any object Domain_Controllers eq 49155,True,False,External,Domain Controllers
+ACL_IN,12,access-list ACL_IN extended permit TCP any object Domain_Controllers eq 49158,True,False,External,Domain Controllers
+ACL_IN,13,access-list ACL_IN extended permit UDP any object Domain_Controllers eq domain,True,False,External,Domain Controllers
+ACL_IN,14,access-list ACL_IN extended permit UDP any object Domain_Controllers eq ntp,True,False,External,Domain Controllers
+ACL_IN,15,access-list ACL_IN extended permit UDP any object Domain_Controllers eq netbios-dgm,True,False,External,Domain Controllers
+ACL_IN,16,access-list ACL_IN extended permit UDP any object Domain_Controllers eq 389,True,False,External,Domain Controllers
+ACL_IN,17,access-list ACL_IN extended permit TCP object MSSQL_Database object Tetration_Cluster_(172.26.46.0/24) eq https,True,False,MSSQL Database,Tetration Cluster (172.26.46.0/24)
+ACL_IN,18,access-list ACL_IN extended permit TCP object MSSQL_Database object Tetration_Cluster_(172.26.46.0/24) eq 5640,True,False,MSSQL Database,Tetration Cluster (172.26.46.0/24)
+ACL_IN,19,access-list ACL_IN extended permit ICMP object Domain_Controllers object Sharepoint_DC,True,False,Domain Controllers,Sharepoint DC
+ACL_IN,20,access-list ACL_IN extended permit ICMP object Domain_Controllers object MSSQL_Database,True,False,Domain Controllers,MSSQL Database
+ACL_IN,21,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_DC eq 54091,True,False,MSSQL Database,Sharepoint DC
+ACL_IN,22,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_DC eq 54130,True,False,MSSQL Database,Sharepoint DC
+ACL_IN,23,access-list ACL_IN extended permit ICMP object VDI_Jump_Server object Sharepoint_Front-End,True,False,VDI Jump Server,Sharepoint Front-End
+ACL_IN,24,access-list ACL_IN extended permit TCP object Sharepoint_Search object MSSQL_Database eq 1433,True,False,Sharepoint Search,MSSQL Database
+ACL_IN,25,access-list ACL_IN extended permit ICMP object Sharepoint_Front-End object Domain_Controllers,True,False,Sharepoint Front-End,Domain Controllers
+ACL_IN,26,access-list ACL_IN extended permit UDP object Sharepoint_Front-End object Domain_Controllers eq domain,True,False,Sharepoint Front-End,Domain Controllers
+ACL_IN,27,access-list ACL_IN extended permit UDP object Sharepoint_Front-End object Domain_Controllers eq ntp,True,False,Sharepoint Front-End,Domain Controllers
+ACL_IN,28,access-list ACL_IN extended permit UDP object Sharepoint_Front-End object Domain_Controllers eq 389,True,False,Sharepoint Front-End,Domain Controllers
+ACL_IN,29,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object Domain_Controllers eq 88,True,False,Sharepoint Front-End,Domain Controllers
+ACL_IN,30,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object Domain_Controllers eq 135,True,False,Sharepoint Front-End,Domain Controllers
+ACL_IN,31,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object Domain_Controllers eq ldap,True,False,Sharepoint Front-End,Domain Controllers
+ACL_IN,32,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object Domain_Controllers eq 445,True,False,Sharepoint Front-End,Domain Controllers
+ACL_IN,33,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object Domain_Controllers eq 49155,True,False,Sharepoint Front-End,Domain Controllers
+ACL_IN,34,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object Domain_Controllers eq 49158,True,False,Sharepoint Front-End,Domain Controllers
+ACL_IN,35,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object Reporting_Service eq 7819,True,False,Sharepoint Front-End,Reporting Service
+ACL_IN,36,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object Reporting_Service eq 7886,True,False,Sharepoint Front-End,Reporting Service
+ACL_IN,37,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object Reporting_Service eq 7890,True,False,Sharepoint Front-End,Reporting Service
+ACL_IN,38,access-list ACL_IN extended permit TCP object Web_Servers object Tetration_Cluster_(172.26.46.0/24) eq 5640,True,False,Web Servers,Tetration Cluster (172.26.46.0/24)
+ACL_IN,39,access-list ACL_IN extended permit TCP object Web_Servers object Tetration_Cluster_(172.26.46.0/24) eq https,True,False,Web Servers,Tetration Cluster (172.26.46.0/24)
+ACL_IN,40,access-list ACL_IN extended permit TCP object Reporting_Service object Web_Servers eq 445,True,False,Reporting Service,Web Servers
+ACL_IN,41,access-list ACL_IN extended permit TCP object Reporting_Service object Web_Servers eq www,True,False,Reporting Service,Web Servers
+ACL_IN,42,access-list ACL_IN extended permit TCP object Web_Servers object Reporting_Service eq 7855,True,False,Web Servers,Reporting Service
+ACL_IN,43,access-list ACL_IN extended permit TCP object Web_Servers object Reporting_Service eq 7815,True,False,Web Servers,Reporting Service
+ACL_IN,44,access-list ACL_IN extended permit TCP object Web_Servers object Reporting_Service eq 7849,True,False,Web Servers,Reporting Service
+ACL_IN,45,access-list ACL_IN extended permit TCP object Web_Servers object Reporting_Service eq 7847,True,False,Web Servers,Reporting Service
+ACL_IN,46,access-list ACL_IN extended permit TCP object Web_Servers object Reporting_Service eq 7813,True,False,Web Servers,Reporting Service
+ACL_IN,47,access-list ACL_IN extended permit TCP object Web_Servers object Reporting_Service eq 7904,True,False,Web Servers,Reporting Service
+ACL_IN,48,access-list ACL_IN extended permit UDP object Sharepoint_DC any range 137-138,True,False,Sharepoint DC,External
+ACL_IN,49,access-list ACL_IN extended permit UDP object Sharepoint_DC any eq 5355,True,False,Sharepoint DC,External
+ACL_IN,50,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Search eq 49224,True,False,MSSQL Database,Sharepoint Search
+ACL_IN,51,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Search eq 51933,True,False,MSSQL Database,Sharepoint Search
+ACL_IN,52,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Search eq 54326,True,False,MSSQL Database,Sharepoint Search
+ACL_IN,53,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Search eq 54625,True,False,MSSQL Database,Sharepoint Search
+ACL_IN,54,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Search eq 61371,True,False,MSSQL Database,Sharepoint Search
+ACL_IN,55,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Search eq 64269,True,False,MSSQL Database,Sharepoint Search
+ACL_IN,56,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Search eq 64290,True,False,MSSQL Database,Sharepoint Search
+ACL_IN,57,access-list ACL_IN extended permit UDP object Sharepoint_Search any range 137-138,True,False,Sharepoint Search,External
+ACL_IN,58,access-list ACL_IN extended permit UDP object Sharepoint_Search any eq 5355,True,False,Sharepoint Search,External
+ACL_IN,59,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object Web_Servers eq 50014,True,False,Tetration Cluster (172.26.46.0/24),Web Servers
+ACL_IN,60,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object Web_Servers eq 60474,True,False,Tetration Cluster (172.26.46.0/24),Web Servers
+ACL_IN,61,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object Web_Servers eq 50006,True,False,Tetration Cluster (172.26.46.0/24),Web Servers
+ACL_IN,62,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object Web_Servers eq 57543,True,False,Tetration Cluster (172.26.46.0/24),Web Servers
+ACL_IN,63,access-list ACL_IN extended permit TCP object Web_Servers object MSSQL_Database eq 1433,True,False,Web Servers,MSSQL Database
+ACL_IN,64,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Front-End range 50595-50596,True,False,MSSQL Database,Sharepoint Front-End
+ACL_IN,65,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Front-End eq 50624,True,False,MSSQL Database,Sharepoint Front-End
+ACL_IN,66,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Front-End eq 51505,True,False,MSSQL Database,Sharepoint Front-End
+ACL_IN,67,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Front-End eq 52199,True,False,MSSQL Database,Sharepoint Front-End
+ACL_IN,68,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Front-End eq 60440,True,False,MSSQL Database,Sharepoint Front-End
+ACL_IN,69,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Front-End eq 61103,True,False,MSSQL Database,Sharepoint Front-End
+ACL_IN,70,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Front-End eq 61126,True,False,MSSQL Database,Sharepoint Front-End
+ACL_IN,71,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Front-End eq 61672,True,False,MSSQL Database,Sharepoint Front-End
+ACL_IN,72,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Front-End eq 61785,True,False,MSSQL Database,Sharepoint Front-End
+ACL_IN,73,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Front-End eq 61836,True,False,MSSQL Database,Sharepoint Front-End
+ACL_IN,74,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Front-End eq 61841,True,False,MSSQL Database,Sharepoint Front-End
+ACL_IN,75,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Front-End eq 62060,True,False,MSSQL Database,Sharepoint Front-End
+ACL_IN,76,access-list ACL_IN extended permit TCP object MSSQL_Database object Sharepoint_Front-End eq 64521,True,False,MSSQL Database,Sharepoint Front-End
+ACL_IN,77,access-list ACL_IN extended permit ICMP any object Sharepoint_DC,True,False,External,Sharepoint DC
+ACL_IN,78,access-list ACL_IN extended permit UDP object Sharepoint_Search object Domain_Controllers eq domain,True,False,Sharepoint Search,Domain Controllers
+ACL_IN,79,access-list ACL_IN extended permit UDP object Sharepoint_Search object Domain_Controllers eq ntp,True,False,Sharepoint Search,Domain Controllers
+ACL_IN,80,access-list ACL_IN extended permit UDP object Sharepoint_Search object Domain_Controllers eq 389,True,False,Sharepoint Search,Domain Controllers
+ACL_IN,81,access-list ACL_IN extended permit ICMP object Sharepoint_Search object Domain_Controllers,True,False,Sharepoint Search,Domain Controllers
+ACL_IN,82,access-list ACL_IN extended permit TCP object Sharepoint_Search object Domain_Controllers eq 88,True,False,Sharepoint Search,Domain Controllers
+ACL_IN,83,access-list ACL_IN extended permit TCP object Sharepoint_Search object Domain_Controllers eq 135,True,False,Sharepoint Search,Domain Controllers
+ACL_IN,84,access-list ACL_IN extended permit TCP object Sharepoint_Search object Domain_Controllers eq ldap,True,False,Sharepoint Search,Domain Controllers
+ACL_IN,85,access-list ACL_IN extended permit TCP object Sharepoint_Search object Domain_Controllers eq 445,True,False,Sharepoint Search,Domain Controllers
+ACL_IN,86,access-list ACL_IN extended permit TCP object Sharepoint_Search object Domain_Controllers eq 49155,True,False,Sharepoint Search,Domain Controllers
+ACL_IN,87,access-list ACL_IN extended permit TCP object Sharepoint_Search object Domain_Controllers eq 49158,True,False,Sharepoint Search,Domain Controllers
+ACL_IN,88,access-list ACL_IN extended permit ICMP object VDI_Jump_Server object Web_Servers,True,False,VDI Jump Server,Web Servers
+ACL_IN,89,access-list ACL_IN extended permit TCP any object Reporting_Service eq 7850,True,False,External,Reporting Service
+ACL_IN,90,access-list ACL_IN extended permit TCP any object Reporting_Service eq 7852,True,False,External,Reporting Service
+ACL_IN,91,access-list ACL_IN extended permit ICMP any object Reporting_Service,True,False,External,Reporting Service
+ACL_IN,92,access-list ACL_IN extended permit TCP object Sharepoint_Search object Reporting_Service eq 7830,True,False,Sharepoint Search,Reporting Service
+ACL_IN,93,access-list ACL_IN extended permit TCP object Sharepoint_Search object Reporting_Service range 7880-7881,True,False,Sharepoint Search,Reporting Service
+ACL_IN,94,access-list ACL_IN extended permit TCP object Sharepoint_Search object Reporting_Service eq 7883,True,False,Sharepoint Search,Reporting Service
+ACL_IN,95,access-list ACL_IN extended permit TCP object Reporting_Service object Tetration_Cluster_(172.26.46.0/24) eq https,True,False,Reporting Service,Tetration Cluster (172.26.46.0/24)
+ACL_IN,96,access-list ACL_IN extended permit TCP object Reporting_Service object Tetration_Cluster_(172.26.46.0/24) eq 5640,True,False,Reporting Service,Tetration Cluster (172.26.46.0/24)
+ACL_IN,97,access-list ACL_IN extended permit TCP object Domain_Controllers object Sharepoint_Search eq 53951,True,False,Domain Controllers,Sharepoint Search
+ACL_IN,98,access-list ACL_IN extended permit TCP object Domain_Controllers object Sharepoint_Search eq 58546,True,False,Domain Controllers,Sharepoint Search
+ACL_IN,99,access-list ACL_IN extended permit TCP object Domain_Controllers object Sharepoint_Search eq 58945,True,False,Domain Controllers,Sharepoint Search
+ACL_IN,100,access-list ACL_IN extended permit TCP object Domain_Controllers object Sharepoint_Search eq 59548,True,False,Domain Controllers,Sharepoint Search
+ACL_IN,101,access-list ACL_IN extended permit TCP object Domain_Controllers object Sharepoint_Search eq 61997,True,False,Domain Controllers,Sharepoint Search
+ACL_IN,102,access-list ACL_IN extended permit UDP object VDI_Jump_Server any range 137-138,True,False,VDI Jump Server,External
+ACL_IN,103,access-list ACL_IN extended permit UDP object VDI_Jump_Server any eq 5355,True,False,VDI Jump Server,External
+ACL_IN,104,access-list ACL_IN extended permit UDP object Domain_Controllers object Sharepoint_Front-End eq 58838,True,False,Domain Controllers,Sharepoint Front-End
+ACL_IN,105,access-list ACL_IN extended permit UDP object Domain_Controllers object Sharepoint_Front-End eq 60852,True,False,Domain Controllers,Sharepoint Front-End
+ACL_IN,106,access-list ACL_IN extended permit UDP object Domain_Controllers object Sharepoint_Front-End eq 61239,True,False,Domain Controllers,Sharepoint Front-End
+ACL_IN,107,access-list ACL_IN extended permit UDP object Domain_Controllers object Sharepoint_Front-End eq 63786,True,False,Domain Controllers,Sharepoint Front-End
+ACL_IN,108,access-list ACL_IN extended permit ICMP object Reporting_Service object Domain_Controllers,True,False,Reporting Service,Domain Controllers
+ACL_IN,109,access-list ACL_IN extended permit UDP object Reporting_Service object Domain_Controllers eq domain,True,False,Reporting Service,Domain Controllers
+ACL_IN,110,access-list ACL_IN extended permit UDP object Reporting_Service object Domain_Controllers eq ntp,True,False,Reporting Service,Domain Controllers
+ACL_IN,111,access-list ACL_IN extended permit UDP object Reporting_Service object Domain_Controllers eq netbios-ns,True,False,Reporting Service,Domain Controllers
+ACL_IN,112,access-list ACL_IN extended permit UDP object Reporting_Service object Domain_Controllers eq 389,True,False,Reporting Service,Domain Controllers
+ACL_IN,113,access-list ACL_IN extended permit TCP object Reporting_Service object Domain_Controllers eq domain,True,False,Reporting Service,Domain Controllers
+ACL_IN,114,access-list ACL_IN extended permit TCP object Reporting_Service object Domain_Controllers eq 88,True,False,Reporting Service,Domain Controllers
+ACL_IN,115,access-list ACL_IN extended permit TCP object Reporting_Service object Domain_Controllers eq 135,True,False,Reporting Service,Domain Controllers
+ACL_IN,116,access-list ACL_IN extended permit TCP object Reporting_Service object Domain_Controllers eq netbios-ssn,True,False,Reporting Service,Domain Controllers
+ACL_IN,117,access-list ACL_IN extended permit TCP object Reporting_Service object Domain_Controllers eq ldap,True,False,Reporting Service,Domain Controllers
+ACL_IN,118,access-list ACL_IN extended permit TCP object Reporting_Service object Domain_Controllers eq 445,True,False,Reporting Service,Domain Controllers
+ACL_IN,119,access-list ACL_IN extended permit TCP object Reporting_Service object Domain_Controllers eq 49155,True,False,Reporting Service,Domain Controllers
+ACL_IN,120,access-list ACL_IN extended permit TCP object Reporting_Service object Domain_Controllers eq 49158,True,False,Reporting Service,Domain Controllers
+ACL_IN,121,access-list ACL_IN extended permit UDP object Web_Servers any eq 5355,True,False,Web Servers,External
+ACL_IN,122,access-list ACL_IN extended permit UDP object Web_Servers any range 137-138,True,False,Web Servers,External
+ACL_IN,123,access-list ACL_IN extended permit UDP object MSSQL_Database any range 137-138,True,False,MSSQL Database,External
+ACL_IN,124,access-list ACL_IN extended permit UDP object MSSQL_Database any eq 5355,True,False,MSSQL Database,External
+ACL_IN,125,access-list ACL_IN extended permit TCP object Sharepoint_DC object Tetration_Cluster_(172.26.46.0/24) eq https,True,False,Sharepoint DC,Tetration Cluster (172.26.46.0/24)
+ACL_IN,126,access-list ACL_IN extended permit TCP object Sharepoint_DC object Tetration_Cluster_(172.26.46.0/24) eq 5640,True,False,Sharepoint DC,Tetration Cluster (172.26.46.0/24)
+ACL_IN,127,access-list ACL_IN extended permit UDP object Web_Servers object Domain_Controllers eq ntp,True,False,Web Servers,Domain Controllers
+ACL_IN,128,access-list ACL_IN extended permit UDP object Web_Servers object Domain_Controllers eq domain,True,False,Web Servers,Domain Controllers
+ACL_IN,129,access-list ACL_IN extended permit UDP object Web_Servers object Domain_Controllers eq 389,True,False,Web Servers,Domain Controllers
+ACL_IN,130,access-list ACL_IN extended permit TCP object Web_Servers object Domain_Controllers eq 445,True,False,Web Servers,Domain Controllers
+ACL_IN,131,access-list ACL_IN extended permit TCP object Web_Servers object Domain_Controllers eq domain,True,False,Web Servers,Domain Controllers
+ACL_IN,132,access-list ACL_IN extended permit TCP object Web_Servers object Domain_Controllers eq 49158,True,False,Web Servers,Domain Controllers
+ACL_IN,133,access-list ACL_IN extended permit ICMP object Web_Servers object Domain_Controllers,True,False,Web Servers,Domain Controllers
+ACL_IN,134,access-list ACL_IN extended permit TCP object Web_Servers object Domain_Controllers eq 49155,True,False,Web Servers,Domain Controllers
+ACL_IN,135,access-list ACL_IN extended permit TCP object Web_Servers object Domain_Controllers eq 135,True,False,Web Servers,Domain Controllers
+ACL_IN,136,access-list ACL_IN extended permit TCP object Web_Servers object Domain_Controllers eq 88,True,False,Web Servers,Domain Controllers
+ACL_IN,137,access-list ACL_IN extended permit TCP object Web_Servers object Domain_Controllers eq ldap,True,False,Web Servers,Domain Controllers
+ACL_IN,138,access-list ACL_IN extended permit UDP object Domain_Controllers any eq domain,True,False,Domain Controllers,External
+ACL_IN,139,access-list ACL_IN extended permit UDP object Domain_Controllers any range 137-138,True,False,Domain Controllers,External
+ACL_IN,140,access-list ACL_IN extended permit UDP object Domain_Controllers any eq 5355,True,False,Domain Controllers,External
+ACL_IN,141,access-list ACL_IN extended permit UDP object Domain_Controllers any eq 49595,True,False,Domain Controllers,External
+ACL_IN,142,access-list ACL_IN extended permit UDP object Domain_Controllers any eq 50126,True,False,Domain Controllers,External
+ACL_IN,143,access-list ACL_IN extended permit UDP object Domain_Controllers any eq 50689,True,False,Domain Controllers,External
+ACL_IN,144,access-list ACL_IN extended permit UDP object Domain_Controllers any eq 52069,True,False,Domain Controllers,External
+ACL_IN,145,access-list ACL_IN extended permit UDP object Domain_Controllers any eq 53864,True,False,Domain Controllers,External
+ACL_IN,146,access-list ACL_IN extended permit UDP object Domain_Controllers any eq 60358,True,False,Domain Controllers,External
+ACL_IN,147,access-list ACL_IN extended permit TCP object Reporting_Service any eq 135,True,False,Reporting Service,External
+ACL_IN,148,access-list ACL_IN extended permit TCP object Reporting_Service any eq 445,True,False,Reporting Service,External
+ACL_IN,149,access-list ACL_IN extended permit UDP object Reporting_Service any range 137-138,True,False,Reporting Service,External
+ACL_IN,150,access-list ACL_IN extended permit UDP object Reporting_Service any eq 5355,True,False,Reporting Service,External
+ACL_IN,151,access-list ACL_IN extended permit TCP object VDI_Jump_Server object Domain_Controllers eq 88,True,False,VDI Jump Server,Domain Controllers
+ACL_IN,152,access-list ACL_IN extended permit TCP object VDI_Jump_Server object Domain_Controllers eq 135,True,False,VDI Jump Server,Domain Controllers
+ACL_IN,153,access-list ACL_IN extended permit TCP object VDI_Jump_Server object Domain_Controllers eq ldap,True,False,VDI Jump Server,Domain Controllers
+ACL_IN,154,access-list ACL_IN extended permit TCP object VDI_Jump_Server object Domain_Controllers eq 445,True,False,VDI Jump Server,Domain Controllers
+ACL_IN,155,access-list ACL_IN extended permit TCP object VDI_Jump_Server object Domain_Controllers eq 464,True,False,VDI Jump Server,Domain Controllers
+ACL_IN,156,access-list ACL_IN extended permit TCP object VDI_Jump_Server object Domain_Controllers eq 3268,True,False,VDI Jump Server,Domain Controllers
+ACL_IN,157,access-list ACL_IN extended permit TCP object VDI_Jump_Server object Domain_Controllers eq 3389,True,False,VDI Jump Server,Domain Controllers
+ACL_IN,158,access-list ACL_IN extended permit TCP object VDI_Jump_Server object Domain_Controllers eq 49155,True,False,VDI Jump Server,Domain Controllers
+ACL_IN,159,access-list ACL_IN extended permit TCP object VDI_Jump_Server object Domain_Controllers eq 49158,True,False,VDI Jump Server,Domain Controllers
+ACL_IN,160,access-list ACL_IN extended permit UDP object VDI_Jump_Server object Domain_Controllers eq domain,True,False,VDI Jump Server,Domain Controllers
+ACL_IN,161,access-list ACL_IN extended permit UDP object VDI_Jump_Server object Domain_Controllers eq ntp,True,False,VDI Jump Server,Domain Controllers
+ACL_IN,162,access-list ACL_IN extended permit UDP object VDI_Jump_Server object Domain_Controllers eq 389,True,False,VDI Jump Server,Domain Controllers
+ACL_IN,163,access-list ACL_IN extended permit UDP object VDI_Jump_Server object Domain_Controllers eq 3389,True,False,VDI Jump Server,Domain Controllers
+ACL_IN,164,access-list ACL_IN extended permit ICMP object VDI_Jump_Server object Domain_Controllers,True,False,VDI Jump Server,Domain Controllers
+ACL_IN,165,access-list ACL_IN extended permit TCP object VDI_Jump_Server object Reporting_Service eq 3389,True,False,VDI Jump Server,Reporting Service
+ACL_IN,166,access-list ACL_IN extended permit TCP object VDI_Jump_Server object Reporting_Service eq 7844,True,False,VDI Jump Server,Reporting Service
+ACL_IN,167,access-list ACL_IN extended permit TCP object VDI_Jump_Server object Reporting_Service eq 7846,True,False,VDI Jump Server,Reporting Service
+ACL_IN,168,access-list ACL_IN extended permit UDP object VDI_Jump_Server object Reporting_Service eq 3389,True,False,VDI Jump Server,Reporting Service
+ACL_IN,169,access-list ACL_IN extended permit ICMP object VDI_Jump_Server object Reporting_Service,True,False,VDI Jump Server,Reporting Service
+ACL_IN,170,access-list ACL_IN extended permit ICMP any object Sharepoint_Search,True,False,External,Sharepoint Search
+ACL_IN,171,access-list ACL_IN extended permit UDP object Sharepoint_Front-End any range 137-138,True,False,Sharepoint Front-End,External
+ACL_IN,172,access-list ACL_IN extended permit UDP object Sharepoint_Front-End any eq 5355,True,False,Sharepoint Front-End,External
+ACL_IN,173,access-list ACL_IN extended permit UDP any object MSSQL_Database eq 3389,True,False,External,MSSQL Database
+ACL_IN,174,access-list ACL_IN extended permit ICMP any object MSSQL_Database,True,False,External,MSSQL Database
+ACL_IN,175,access-list ACL_IN extended permit TCP any object MSSQL_Database eq 3389,True,False,External,MSSQL Database
+ACL_IN,176,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object Sharepoint_Search eq 808,True,False,Sharepoint Front-End,Sharepoint Search
+ACL_IN,177,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object Sharepoint_Search range 32843-32844,True,False,Sharepoint Front-End,Sharepoint Search
+ACL_IN,178,access-list ACL_IN extended permit TCP object Reporting_Service object Sharepoint_DC eq 445,True,False,Reporting Service,Sharepoint DC
+ACL_IN,179,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object Tetration_Cluster_(172.26.46.0/24) eq https,True,False,Sharepoint Front-End,Tetration Cluster (172.26.46.0/24)
+ACL_IN,180,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object Tetration_Cluster_(172.26.46.0/24) eq 5640,True,False,Sharepoint Front-End,Tetration Cluster (172.26.46.0/24)
+ACL_IN,181,access-list ACL_IN extended permit TCP object Domain_Controllers object Tetration_Cluster_(172.26.46.0/24) eq https,True,False,Domain Controllers,Tetration Cluster (172.26.46.0/24)
+ACL_IN,182,access-list ACL_IN extended permit TCP object Domain_Controllers object Tetration_Cluster_(172.26.46.0/24) eq 5640,True,False,Domain Controllers,Tetration Cluster (172.26.46.0/24)
+ACL_IN,183,access-list ACL_IN extended permit ICMP object Domain_Controllers object Web_Servers,True,False,Domain Controllers,Web Servers
+ACL_IN,184,access-list ACL_IN extended permit TCP object MSSQL_Database object Web_Servers eq 57594,True,False,MSSQL Database,Web Servers
+ACL_IN,185,access-list ACL_IN extended permit TCP object MSSQL_Database object Web_Servers eq 51563,True,False,MSSQL Database,Web Servers
+ACL_IN,186,access-list ACL_IN extended permit TCP object MSSQL_Database object Web_Servers eq 60406,True,False,MSSQL Database,Web Servers
+ACL_IN,187,access-list ACL_IN extended permit UDP object Sharepoint_DC object Domain_Controllers eq domain,True,False,Sharepoint DC,Domain Controllers
+ACL_IN,188,access-list ACL_IN extended permit UDP object Sharepoint_DC object Domain_Controllers eq ntp,True,False,Sharepoint DC,Domain Controllers
+ACL_IN,189,access-list ACL_IN extended permit UDP object Sharepoint_DC object Domain_Controllers eq 389,True,False,Sharepoint DC,Domain Controllers
+ACL_IN,190,access-list ACL_IN extended permit ICMP object Sharepoint_DC object Domain_Controllers,True,False,Sharepoint DC,Domain Controllers
+ACL_IN,191,access-list ACL_IN extended permit TCP object Sharepoint_DC object Domain_Controllers eq domain,True,False,Sharepoint DC,Domain Controllers
+ACL_IN,192,access-list ACL_IN extended permit TCP object Sharepoint_DC object Domain_Controllers eq 88,True,False,Sharepoint DC,Domain Controllers
+ACL_IN,193,access-list ACL_IN extended permit TCP object Sharepoint_DC object Domain_Controllers eq 135,True,False,Sharepoint DC,Domain Controllers
+ACL_IN,194,access-list ACL_IN extended permit TCP object Sharepoint_DC object Domain_Controllers eq ldap,True,False,Sharepoint DC,Domain Controllers
+ACL_IN,195,access-list ACL_IN extended permit TCP object Sharepoint_DC object Domain_Controllers eq 445,True,False,Sharepoint DC,Domain Controllers
+ACL_IN,196,access-list ACL_IN extended permit TCP object Sharepoint_DC object Domain_Controllers eq 49155,True,False,Sharepoint DC,Domain Controllers
+ACL_IN,197,access-list ACL_IN extended permit TCP object Sharepoint_DC object Domain_Controllers eq 49158,True,False,Sharepoint DC,Domain Controllers
+ACL_IN,198,access-list ACL_IN extended permit TCP object Reporting_Service object VDI_Jump_Server eq 445,True,False,Reporting Service,VDI Jump Server
+ACL_IN,199,access-list ACL_IN extended permit TCP object Reporting_Service object VDI_Jump_Server eq 2564,True,False,Reporting Service,VDI Jump Server
+ACL_IN,200,access-list ACL_IN extended permit TCP object Reporting_Service object VDI_Jump_Server eq 4156,True,False,Reporting Service,VDI Jump Server
+ACL_IN,201,access-list ACL_IN extended permit UDP object Reporting_Service object VDI_Jump_Server range 55774-55775,True,False,Reporting Service,VDI Jump Server
+ACL_IN,202,access-list ACL_IN extended permit UDP object Reporting_Service object VDI_Jump_Server range 59900-59901,True,False,Reporting Service,VDI Jump Server
+ACL_IN,203,access-list ACL_IN extended permit UDP object Reporting_Service object VDI_Jump_Server eq 64359,True,False,Reporting Service,VDI Jump Server
+ACL_IN,204,access-list ACL_IN extended permit TCP object Sharepoint_DC object Reporting_Service eq 7871,True,False,Sharepoint DC,Reporting Service
+ACL_IN,205,access-list ACL_IN extended permit TCP object Reporting_Service object MSSQL_Database eq 445,True,False,Reporting Service,MSSQL Database
+ACL_IN,206,access-list ACL_IN extended permit ICMP object VDI_Jump_Server object Sharepoint_DC,True,False,VDI Jump Server,Sharepoint DC
+ACL_IN,207,access-list ACL_IN extended permit UDP object MSSQL_Database object Domain_Controllers eq domain,True,False,MSSQL Database,Domain Controllers
+ACL_IN,208,access-list ACL_IN extended permit UDP object MSSQL_Database object Domain_Controllers eq ntp,True,False,MSSQL Database,Domain Controllers
+ACL_IN,209,access-list ACL_IN extended permit UDP object MSSQL_Database object Domain_Controllers eq 389,True,False,MSSQL Database,Domain Controllers
+ACL_IN,210,access-list ACL_IN extended permit TCP object MSSQL_Database object Domain_Controllers eq 88,True,False,MSSQL Database,Domain Controllers
+ACL_IN,211,access-list ACL_IN extended permit TCP object MSSQL_Database object Domain_Controllers eq 135,True,False,MSSQL Database,Domain Controllers
+ACL_IN,212,access-list ACL_IN extended permit TCP object MSSQL_Database object Domain_Controllers eq ldap,True,False,MSSQL Database,Domain Controllers
+ACL_IN,213,access-list ACL_IN extended permit TCP object MSSQL_Database object Domain_Controllers eq 445,True,False,MSSQL Database,Domain Controllers
+ACL_IN,214,access-list ACL_IN extended permit TCP object MSSQL_Database object Domain_Controllers eq 49155,True,False,MSSQL Database,Domain Controllers
+ACL_IN,215,access-list ACL_IN extended permit TCP object MSSQL_Database object Domain_Controllers eq 49158,True,False,MSSQL Database,Domain Controllers
+ACL_IN,216,access-list ACL_IN extended permit ICMP object MSSQL_Database object Domain_Controllers,True,False,MSSQL Database,Domain Controllers
+ACL_IN,217,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object MSSQL_Database eq 50805,True,False,Tetration Cluster (172.26.46.0/24),MSSQL Database
+ACL_IN,218,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object MSSQL_Database range 50808-50809,True,False,Tetration Cluster (172.26.46.0/24),MSSQL Database
+ACL_IN,219,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object MSSQL_Database eq 50817,True,False,Tetration Cluster (172.26.46.0/24),MSSQL Database
+ACL_IN,220,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object MSSQL_Database eq 54806,True,False,Tetration Cluster (172.26.46.0/24),MSSQL Database
+ACL_IN,221,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object MSSQL_Database eq 58384,True,False,Tetration Cluster (172.26.46.0/24),MSSQL Database
+ACL_IN,222,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object MSSQL_Database eq 58386,True,False,Tetration Cluster (172.26.46.0/24),MSSQL Database
+ACL_IN,223,access-list ACL_IN extended permit ICMP object VDI_Jump_Server object MSSQL_Database,True,False,VDI Jump Server,MSSQL Database
+ACL_IN,224,access-list ACL_IN extended permit UDP object Domain_Controllers object Reporting_Service eq 51709,True,False,Domain Controllers,Reporting Service
+ACL_IN,225,access-list ACL_IN extended permit TCP object Domain_Controllers object Reporting_Service eq 7885,True,False,Domain Controllers,Reporting Service
+ACL_IN,226,access-list ACL_IN extended permit ICMP object Domain_Controllers object Reporting_Service,True,False,Domain Controllers,Reporting Service
+ACL_IN,227,access-list ACL_IN extended permit TCP object Sharepoint_Search object Sharepoint_Front-End eq 32843,True,False,Sharepoint Search,Sharepoint Front-End
+ACL_IN,228,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object Sharepoint_DC eq 59525,True,False,Tetration Cluster (172.26.46.0/24),Sharepoint DC
+ACL_IN,229,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object Sharepoint_DC eq 59539,True,False,Tetration Cluster (172.26.46.0/24),Sharepoint DC
+ACL_IN,230,access-list ACL_IN extended permit TCP object Tetration_Cluster_(172.26.46.0/24) object Sharepoint_DC eq 61391,True,False,Tetration Cluster (172.26.46.0/24),Sharepoint DC
+ACL_IN,231,access-list ACL_IN extended permit TCP any object Web_Servers eq www,True,False,External,Web Servers
+ACL_IN,232,access-list ACL_IN extended permit ICMP any object Web_Servers,True,False,External,Web Servers
+ACL_IN,233,access-list ACL_IN extended permit TCP object Reporting_Service object Sharepoint_Search eq 445,True,False,Reporting Service,Sharepoint Search
+ACL_IN,234,access-list ACL_IN extended permit ICMP any object Sharepoint_Front-End,True,False,External,Sharepoint Front-End
+ACL_IN,235,access-list ACL_IN extended permit TCP object MSSQL_Database object Reporting_Service eq 7818,True,False,MSSQL Database,Reporting Service
+ACL_IN,236,access-list ACL_IN extended permit TCP object MSSQL_Database object Reporting_Service eq 7872,True,False,MSSQL Database,Reporting Service
+ACL_IN,237,access-list ACL_IN extended permit TCP object MSSQL_Database object Reporting_Service eq 7874,True,False,MSSQL Database,Reporting Service
+ACL_IN,238,access-list ACL_IN extended permit TCP object MSSQL_Database object Reporting_Service eq 7889,True,False,MSSQL Database,Reporting Service
+ACL_IN,239,access-list ACL_IN extended permit TCP object MSSQL_Database object Reporting_Service eq 7891,True,False,MSSQL Database,Reporting Service
+ACL_IN,240,access-list ACL_IN extended permit TCP object Sharepoint_DC object MSSQL_Database eq 1433,True,False,Sharepoint DC,MSSQL Database
+ACL_IN,241,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object MSSQL_Database eq 1433,True,False,Sharepoint Front-End,MSSQL Database
+ACL_IN,242,access-list ACL_IN extended permit TCP object Sharepoint_Front-End object Sharepoint_DC eq 22233,True,False,Sharepoint Front-End,Sharepoint DC
+ACL_IN,243,access-list ACL_IN extended permit TCP object Reporting_Service object Sharepoint_Front-End eq 445,True,False,Reporting Service,Sharepoint Front-End

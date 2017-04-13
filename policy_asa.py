@@ -91,11 +91,11 @@ def main():
         for rule in policy.get_whitelist_policies():
 
             ##Uncomment for ASA Config
-            if policy.src_name == 'External' and policy.dst_name != 'External':
-            #if policy.src_name != policy.dst_name:
+            #if policy.src_name == 'External' and policy.dst_name != 'External':
+            if policy.src_name != policy.dst_name:
                 if rule.proto == '1':
                     #print "access-list ACL_IN extended permit " + protocols[rule.proto]['Keyword'] + " object-group " + policy.src_name.replace(' ','_') + " object-group " + policy.dst_name.replace(' ','_')
-                    print "access-list ACL_IN extended permit " + protocols[rule.proto]['Keyword'] + " any object " + policy.dst_name.replace(' ','_')
+                    print "access-list ACL_IN extended permit " + protocols[rule.proto]['Keyword'] + ((" object " + policy.src_name.replace(' ','_')) if policy.src_name != 'External' else " any") + ((" object " + policy.dst_name.replace(' ','_')) if policy.dst_name != 'External' else " any")
                 elif (rule.proto == '6') or (rule.proto == '17'):
                     if rule.port_min == rule.port_max:
                         if (str(rule.port_min) in ports.keys()) and (ports[str(rule.port_min)]['Proto'] == protocols[rule.proto]['Keyword'] or ports[str(rule.port_min)]['Proto'] == 'TCP, UDP'):
@@ -103,10 +103,10 @@ def main():
                         else:
                             port = rule.port_min
                         #print "access-list ACL_IN extended permit " + protocols[rule.proto]['Keyword'] + " object-group " + policy.src_name.replace(' ','_') + " object-group " + policy.dst_name.replace(' ','_') + " eq " + rule.port_min
-                        print "access-list ACL_IN extended permit " + protocols[rule.proto]['Keyword'] + " any object " + policy.dst_name.replace(' ','_') + " eq " + port
+                        print "access-list ACL_IN extended permit " + protocols[rule.proto]['Keyword'] + ((" object " + policy.src_name.replace(' ','_')) if policy.src_name != 'External' else " any") + ((" object " + policy.dst_name.replace(' ','_')) if policy.dst_name != 'External' else " any") + " eq " + port
                     else:
                         #print "access-list ACL_IN extended permit " + protocols[rule.proto]['Keyword'] + " object-group " + policy.src_name.replace(' ','_') + " object-group " + policy.dst_name.replace(' ','_') + " range " + rule.port_min + "-" + rule.port_max
-                        print "access-list ACL_IN extended permit " + protocols[rule.proto]['Keyword'] + " any object " + policy.dst_name.replace(' ','_') + " range " + rule.port_min + "-" + rule.port_max
+                        print "access-list ACL_IN extended permit " + protocols[rule.proto]['Keyword'] + ((" object " + policy.src_name.replace(' ','_')) if policy.src_name != 'External' else " any") + ((" object " + policy.dst_name.replace(' ','_')) if policy.dst_name != 'External' else " any") + " range " + rule.port_min + "-" + rule.port_max
 
 
 

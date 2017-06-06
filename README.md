@@ -1,3 +1,7 @@
+# Note
+
+The config generator has recently been updated to support Tetration 2.0.  With changes in the way Tetration now exports whitelist policy, it is now a requirement to have a Tetration system with API access to query against in order to generate the policy.
+
 # Tetration ASA Configuration Generator
 
 Usage:
@@ -6,7 +10,7 @@ Usage:
 python policy_asa.py --config 'JSON_FILE_EXPORT_FROM_TETRATION'
 ```
 
-Currently this script only generates object groups and access lists between internal clusters in a Tetration workspace and the "External" cluster.  It could be easily altered to generate rules between route-tags that are imported into a Tetration workspace.
+Currently this script only generates an ACL entry for every policy for the purpose of demonstration.  This is because we aren't currently ingesting interface and routing information for context from the ASA.  It could be easily altered to filter for rules that traverse routed interfaces or L2 transparent hops.
 
 
 # Tetration ASA Configuration Auditor
@@ -25,7 +29,7 @@ Additional comparison code needed to determine partial match scenarios.  Current
 
 # Prerequisite Packages
 ```
-pip install ipcalc tqdm ciscoconfparse
+pip install ipcalc tqdm ciscoconfparse tetpyclient
 ```
 
 # File Descriptions

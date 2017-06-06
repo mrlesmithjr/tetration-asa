@@ -45,10 +45,8 @@ def main():
     """
 
     #Tetration Access Information
-    API_ENDPOINT="https://medusa-cpoc.cisco.com"
-    API_CREDS="/Users/christophermchenry/Documents/Scripting/tetration-api/medusa_credentials.json"
-    #API_ENDPOINT="https://198.18.138.4"
-    #API_CREDS="/Users/christophermchenry/Documents/Scripting/tetration-api/vcluster_credentials.json"
+    API_ENDPOINT="TetURL"
+    API_CREDS="TetCreds"
 
     #Select Tetration Apps and Load Tet Object Model
     tetEnv = Environment(API_ENDPOINT,API_CREDS)

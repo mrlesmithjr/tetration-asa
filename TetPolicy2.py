@@ -95,6 +95,11 @@ class InventoryFilter(object):
         return self._hosts
 
     @property
+    def filter(self):
+        #print json.dumps(self._filter)
+        return self._filter['filters']
+
+    @property
     def name(self):
         return self._name
 
